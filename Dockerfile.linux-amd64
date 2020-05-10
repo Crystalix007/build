@@ -1,5 +1,5 @@
 ARG GO_VERSION
-FROM golang:$GO_VERSION-stretch
+FROM gotify/build:$GO_VERSION-base
 
 ENV CGO_ENABLED=1
 ENV GOOS=linux

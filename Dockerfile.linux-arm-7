@@ -1,5 +1,5 @@
 ARG GO_VERSION
-FROM golang:$GO_VERSION-stretch
+FROM gotify/build:$GO_VERSION-base
 RUN \
   apt-get update && \
   apt-get install -y gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
